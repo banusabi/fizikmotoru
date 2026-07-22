@@ -45,9 +45,7 @@ while running:
         if abs(velocity_y) < 1:
             velocity_y = 0
 
-    # -----------------------------
-    # Çizim
-    # -----------------------------
+    # ekrana yazıyoruz
     screen.fill((30, 30, 30))
 
     pygame.draw.line(screen, (255, 255, 255), (0, ground), (WIDTH, ground), 4)
@@ -61,6 +59,6 @@ while running:
 
     pygame.display.flip()
     clock.tick(60)
-
+# bitir
 pygame.quit()
 sys.exit()
